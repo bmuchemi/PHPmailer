@@ -1,8 +1,10 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ 
     $plan = $_POST["plan"];
-    $price = $plan == "monthly" ? "$10/month" : "$100/year";
-    $amount = $plan == "monthly" ? 10 : 100;
+    $price = $plan == "monthly" ? "Ksh 2,000/month" : "Ksh 20,000/year";
+    $amount = $plan == "monthly" ? 2000 : 20000;
+    $name = $_POST['name'];
 }
 ?>
 
@@ -63,9 +65,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class="container">
         <h1>Summary</h1>
-        <p><strong>Account Owner:</strong> John Doe</p> <!-- Replace with dynamic data -->
+        <p><strong>Account Owner:</strong> <?= $name; ?></p>
         <p><strong>Plan:</strong> <?= ucfirst($plan); ?></p>
-        <p><strong>Total Amount:</strong> $<?= $amount; ?></p>
+        <p><strong>Total Amount:</strong> Ksh <?= $amount; ?></p>
         <form action="checkout.php" method="POST">
             <input type="hidden" name="plan" value="<?= $plan; ?>">
             <input type="hidden" name="amount" value="<?= $amount; ?>">

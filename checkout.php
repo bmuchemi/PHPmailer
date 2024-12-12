@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         .btn:hover {
             background-color: #45a049;
-        } 
+        }
     </style>
 </head>
 <body>
@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>Checkout Complete</h1>
         <p>Your information has been successfully captured!</p>
         <p>An invoice has been sent to your email address.</p>
-        <a href="plan.php" class="btn">Back to Plans</a>
+        <a href="process_form.php" class="btn">Back to Plans</a>
     </div>
 </body>
 </html>

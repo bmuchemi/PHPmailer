@@ -95,13 +95,13 @@
                     <input type="radio" name="plan" value="monthly" style="display: none;" required>
                     <h2>Monthly Plan</h2>
                     <p>Access for 30 days</p>
-                    <p class="price">$10/month</p>
+                    <p class="price">Ksh 2000/month</p>
                 </label>
                 <label class="plan-card">
                     <input type="radio" name="plan" value="annual" style="display: none;" required>
                     <h2>Annual Plan</h2>
                     <p>Access for 1 year</p>
-                    <p class="price">$100/year</p>
+                    <p class="price">Ksh 20,000/year</p>
                 </label>
             </div>
             <button type="submit" class="btn">Proceed</button>
